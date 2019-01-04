@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="nav_header_vertical_spacing">5dp</dimen>
+    <dimen name="nav_image_header_height">200dp</dimen>
+    <dimen name="nav_image_header_width">250dp</dimen>
+    <dimen name="fab_margin">10dp</dimen>
+</resources>
