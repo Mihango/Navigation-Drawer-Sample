@@ -2,10 +2,12 @@ package com.techmashinani.drawersample
 
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
+import android.support.design.widget.Snackbar
 import android.support.v4.view.GravityCompat
 import android.support.v7.app.ActionBarDrawerToggle
 import android.widget.Toast
 import kotlinx.android.synthetic.main.activity_main.*
+import kotlinx.android.synthetic.main.content_main.*
 import kotlinx.android.synthetic.main.toolbar.*
 
 class MainActivity : AppCompatActivity() {
@@ -14,7 +16,14 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+        setup()
         setupDrawer()
+    }
+
+    private fun setup() {
+        fab.setOnClickListener {
+            Snackbar.make(drawer, "Fab Clicked", Snackbar.LENGTH_LONG).show()
+        }
     }
 
     private fun setupDrawer() {
